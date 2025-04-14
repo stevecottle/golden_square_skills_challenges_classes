@@ -15,9 +15,9 @@ class DiaryEntry():
     def count_words(self):
         # Returns:
         #   int: the number of words in the diary entry
-        int = len(self.contents.split())
-        return int
-        pass
+        words_in_diary_entry = len(self.contents.split())
+        return words_in_diary_entry
+
 
     def reading_time(self, wpm):
         # Parameters:
@@ -26,7 +26,9 @@ class DiaryEntry():
         # Returns:
         #   int: an estimate of the reading time in minutes for the contents at
         #        the given wpm.
-        pass
+        estimated_reading_time = self.count_words() / wpm
+        return estimated_reading_time
+
 
     def reading_chunk(self, wpm, minutes):
         # Parameters
@@ -41,5 +43,11 @@ class DiaryEntry():
         # If called again, `reading_chunk` should return the next chunk,
         # skipping what has already been read, until the contents is fully read.
         # The next call after that should restart from the beginning.
-        pass
+        words_readable_in_given_minutes = wpm * minutes
+        return words_readable_in_given_minutes
 
+instance_one = DiaryEntry("Title", "this is some contents")
+
+print(instance_one.format())
+print(instance_one.count_words())
+print(instance_one.words_readable_in_given_minutes)
