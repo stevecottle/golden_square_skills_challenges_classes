@@ -43,11 +43,11 @@ class DiaryEntry():
         # If called again, `reading_chunk` should return the next chunk,
         # skipping what has already been read, until the contents is fully read.
         # The next call after that should restart from the beginning.
-        words_readable_in_given_minutes = wpm * minutes
-        return words_readable_in_given_minutes
+        pass
+        # !!!!!!! I got lost at this point
+        # words_readable_in_given_minutes = wpm * minutes
+        # return words_readable_in_given_minutes
 
 instance_one = DiaryEntry("Title", "this is some contents")
-
 print(instance_one.format())
 print(instance_one.count_words())
-print(instance_one.words_readable_in_given_minutes)
