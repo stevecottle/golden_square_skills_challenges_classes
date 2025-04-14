@@ -1,19 +1,22 @@
-class DiaryEntry:
+class DiaryEntry():
     def __init__(self, title, contents):
         # Parameters:
         #   title: string
         #   contents: string
-        pass
+        self.title = title
+        self.contents = contents
 
     def format(self):
         # Returns:
         #   A formatted diary entry, for example:
         #   "My Title: These are the contents"
-        pass
+        return f"{self.title}: {self.contents}"
 
     def count_words(self):
         # Returns:
         #   int: the number of words in the diary entry
+        int = len(self.contents.split())
+        return int
         pass
 
     def reading_time(self, wpm):
@@ -39,3 +42,4 @@ class DiaryEntry:
         # skipping what has already been read, until the contents is fully read.
         # The next call after that should restart from the beginning.
         pass
+
