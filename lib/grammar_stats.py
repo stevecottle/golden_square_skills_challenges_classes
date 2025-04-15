@@ -32,4 +32,6 @@ class GrammarStats:
 instance_one = GrammarStats()
 print(f"check: {instance_one.check('Pigasdfdodsygt.')}")
 print(f"percentage good: {instance_one.percentage_good()}")
-print(f"check(text): {text}") #<--- Not working
+# print(f"check(text): {text}") #<--- Not working
+
+#!!! Leaving unfinished

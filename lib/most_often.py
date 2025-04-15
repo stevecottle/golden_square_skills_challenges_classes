@@ -35,3 +35,12 @@ class MostOften:
         # otherwise we'll say there's "no clear winner"
         else:
             return "no clear winner"
+
+
+
+instance_one = MostOften(["one", "two", "three"])
+print(instance_one.starting_list)
+print(instance_one.add_new("pinch"))
+print(instance_one.get_most_often())
+
+#!!! Leaving unfinished
