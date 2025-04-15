@@ -30,7 +30,7 @@ def test_class_returns_item_list_with_multiple_items_added():
     test_instance.add("Brush hair")
     assert test_instance.view_items() == ["Wash dog", "Feed cat", "Brush hair"] # returns ["wash dog", "Feed cat", "Brush hair"]
 
-# !!!! Moving on from this point in favour of moving through the course
+# !!!! Moving on from this point in favour of moving through the course material
 
 # """
 # When an item is marked complete
